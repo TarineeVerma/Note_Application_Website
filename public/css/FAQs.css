@@ -1,0 +1,42 @@
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 0px 12px 2px rgb(142 156 161);
+    /* transform: translateX(-100%);  Initially move the paragraph to the left */ 
+    animation: slideIn 1.2s forwards; /* Apply the animation */
+}
+
+.faq-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9dc600;
+    font-size: 29px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #455a64;
+}
+
+.answer {
+    margin-left: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%); /* Move the paragraph from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move the paragraph to its original position */
+    }
+}

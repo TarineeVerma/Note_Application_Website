@@ -1,0 +1,50 @@
+/* Custom CSS styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .cont404{
+    padding: 15px;
+
+  }
+    
+  
+  
+  .row404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 77vh;
+  }
+  
+  .col404 {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    text-align: center;
+  }
+  
+ .col404 img{
+    width: 447px;
+    margin-bottom: 26px;
+ }
+  
+.btn404 {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f28f8f;
+    border: none;
+    border-radius: 5px;
+    margin-left: 50px;
+    transition: all 0.3s ease-out;
+  } 
+  
+   .btn404:hover {
+    background-color: #455a64;
+  } 
+  

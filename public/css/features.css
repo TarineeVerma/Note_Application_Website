@@ -1,0 +1,65 @@
+
+header {
+    background-color: #6ac7e8;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateX(-100%); /* Initially move the paragraph to the left */
+    animation: slideIn 1.2s forwards; /* Apply the animation */
+}
+
+.functionTitle{
+    font-size: 23px;
+}
+
+.feature {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #455a64;
+    border-radius: 10px;
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.feature p {
+    font-size: 1.1em;
+    color: white;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%); /* Move the paragraph from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move the paragraph to its original position */
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

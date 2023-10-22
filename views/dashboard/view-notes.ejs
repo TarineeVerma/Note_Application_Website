@@ -1,0 +1,70 @@
+<div class="custom-container">
+  <div class="custom-row">
+    <div class="custom-col">
+      <nav aria-label="breadcrumb">
+        <ol class="custom-breadcrumb">
+          <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+          <li class="breadcrumb-item active">
+            <%= note.title %>
+          </li>
+        </ol>
+      </nav>
+      <div class="custom-col-inner">
+        <h1 class="custom-heading">View Note</h1>
+        <button type="button" class="custom-button" id="deleteButton" onclick="openModal('<%= note.title %>')">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <form action="/dashboard/item/<%= noteID %>?_method=PUT" method="POST">
+    <div>
+        <input type="text" class="custom-input" id="title" name="title" value="<%= note.title %>"
+            placeholder="Title">
+    </div>
+
+    <div>
+        <textarea class="custom-textarea" id="body" name="body" placeholder="Take a note..."
+            rows="12"><%= note.body %></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="updatebutton">Update</button>
+    </div>
+</form>
+
+
+</div>
+
+
+
+
+
+<!-- <form action="/dashboard/item-delete/<%= noteID %>?_method=DELETE" method="POST" class="position-relative"> -->
+<!-- <form> -->
+
+
+
+<div id="deleteModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">You are about to delete a note</h5>
+        <button type="button" class="close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          This will delete your note <b class="notetitle-delete" id="noteTitle"></b><br />
+          Are you sure?
+        </p>
+      </div>
+      <div class="delete-modal-footer">
+        <button type="button" class="btnclose" onclick="closeModal()">Close</button>
+        <form action="/dashboard/item-delete/<%= noteID %>?_method=DELETE" method="POST" class="deleteButtonForm">
+        <button type="submit" class="btndelete" onclick="deleteNote()">Delete Note</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>

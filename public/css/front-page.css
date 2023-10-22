@@ -1,0 +1,89 @@
+/* CSS to position elements */
+#container-frontpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #container-frontpage .main-content {
+    flex: 1; 
+  }
+  
+  #container-frontpage .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #container-frontpage .row .col {
+    flex: 1;
+    padding-left: 28px;
+    transform: translateX(-100%); /* Initially move the paragraph to the left */
+    animation: slideIn 1.2s forwards; /* Apply the animation */
+  }
+  
+  #noteimage {
+    flex: 1;
+    text-align: right;
+  }
+  
+  #noteimage img {
+    max-width: 100%;
+    padding: 23px;
+    margin-top: -30px;
+    animation: zoomIn 1.4s ease-out;
+  }
+  
+  #container-frontpage .home-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ba68c8;
+    padding-left: 13px;
+   
+  }
+  
+  #container-frontpage .description {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #455a64;
+  }
+  
+  #container-frontpage .btnfrontpage {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f28f8f;
+    border: none;
+    border-radius: 5px;
+    margin-left: 160px;
+    transition: all 0.3s ease-out;
+  }
+  
+  #container-frontpage .btnfrontpage:hover {
+    background-color: #cf95d8;
+  }
+  
+  @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%); /* Move the paragraph from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move the paragraph to its original position */
+    }
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}

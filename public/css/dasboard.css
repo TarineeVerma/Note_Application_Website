@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@500&display=swap');
+.container-fluid-custom {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .row {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+  }
+  .col {
+    flex: 1;
+    padding: 0.75rem;
+  }
+
+  .col:first-child {
+    margin-bottom: 1rem;
+    font-family: 'Unbounded', cursive;
+    font-weight: 700;
+    margin-left: 83px;
+    color: #ba68c8;
+  }
+
+  .text-end {
+    text-align: right;
+  }
+  .btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #f28f8f;
+    margin-right: 46px;
+    transition: all 0.3s ease-out;
+  }
+
+  .btn:hover {
+    background-color: #cf95d8;
+    color: #fff;
+  }
+
+  /* card========================================= */
+  /* Style for the card */
+.card {
+  border: 1px solid #e09fc8;
+  min-height: 210px;
+ 
+  border-radius: 10px;
+  box-shadow: -1px -2px 12px 3px rgb(27 9 9 / 49%);
+  
+}
+
+.card-title {
+  font-size: 17px; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  font-family: 'Montserrat', sans-serif;
+  color: #7da14e;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 1em; 
+}
+
+.card p{
+  color: #455a64;
+  font-size: 17px;
+}
+
+.card-body {
+  
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-body:hover{
+  
+   border-radius: 10px; 
+  transform: scale(1.07);
+ 
+}
+ 
+.col-sm-3 {
+  width: calc(25% - 20px); 
+  margin-right: 20px; 
+  float: left; 
+}
+
+
+.col-sm-3:nth-child(4n) {
+  margin-right: 0;
+  clear: both;
+}
+
+.mb-4 {
+  margin-bottom: 20px; 
+} 
+
+
+/* Empty Notes List */
+.noteisempty {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  padding: 20px;
+}
+
+.startNote {
+     flex: 1;
+    margin-left: 29pc;
+    margin-bottom: 64px;
+}
+
+.startNote h2{
+  margin: 0;
+  font-size: 32px;
+  color: #455a64;
+}
+
+.startNote h4 {
+  margin: 0;
+  text-align: left;
+  font-size: 29px;
+  color: #455a64;
+}
+.noteisempty a{
+  text-decoration: none;
+   
+    background-color: #cf95d9;
+    color: white;
+    border-radius: 9px;
+    font-size: 24px;
+    padding: 10px;
+    transition:all 0.3s ease-in-out;
+}
+.noteisempty a:hover{
+  background-color: #f28f8f;
+
+}
+
+.page-link{
+  color: #455a64;
+  transition:all 0.3s ease-in-out;
+}
+
+.page-link:hover{
+  color: #cf95d8;
+}
+
+
+/*  inside card--------------------------------------------------------------------------  */
+/* View -notes.ejs-------------------------------------------------------------------------------------------------------------------------- */
+/* Custom CSS to replace Bootstrap classes */
+.custom-container {
+  width: 90%;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 54px;
+}
+
+.custom-row {
+  margin-bottom: 1.5rem;
+}
+
+.custom-col {
+  width: 100%;
+}
+
+.custom-breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.custom-breadcrumb li {
+  display: inline;
+}
+
+.custom-breadcrumb li::after {
+  content: '/'; 
+  margin: 0 0.5rem;
+  color: #cf95d8;
+}
+
+.custom-breadcrumb li:last-child::after {
+  content: none;
+  float: left;
+  
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: 0.375rem;
+  color: #6c757d; 
+  content: ""; 
+}
+
+.breadcrumb-item a{
+  color: #f28f8f;
+  transition:all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.breadcrumb-item a:hover{
+  color: #cf95d8;
+
+}
+
+.breadcrumb-item.active {
+  color:#455a64 ;
+}
+.custom-col-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-heading {
+  font-size: 1.5rem;
+  color: #6ac7e8;
+}
+
+.custom-button {
+  background-color:#cf95d8 ;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  /* font-family: 'Unbounded', cursive; */
+  font-size: 1rem;
+  cursor: pointer;
+  transition:all 0.3s ease-in-out;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.custom-button:hover {
+  background-color: #f28f8f;
+  
+}
+
+/* view card in text area------------------------------------------------------------------------------------------------------------------ */
+/* Custom form styles */
+/* Custom form styles */
+.custom-form {
+  position: relative;
+}
+
+/* Custom input styles */
+.custom-input {
+  width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #9dc668;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #455a64;
+    font-weight: 600;
+
+}
+
+.custom-input:focus {
+  outline: none;
+}
+
+/* Custom textarea styles */
+.custom-textarea {
+    width: 100%;
+    height: 384px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #9dc668;
+    border-radius: 5px;
+}
+.custom-textarea:focus {
+  outline: none;
+}
+
+/* Custom button styles */
+.updatebutton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #6ac7e8;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition:all 0.3s ease-in-out;
+}
+
+/* Apply hover effect to the button */
+.updatebutton:hover {
+  background-color: #f28f8f;
+}
+
+
+/* -----------Search box---------------------------- --------------------------------------------------------------------------*/
+.searchcontainer{
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.searchcontainer a{
+  color: #f28f8f;
+  cursor: pointer;
+  transition:all 0.3s ease-in-out;
+}
+
+.searchcontainer a:hover{
+  color: #9dc668;
+}
+
+
